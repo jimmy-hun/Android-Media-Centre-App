@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/primary_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:padding="10dp" >
+
+    <TextView
+            android:id="@+id/streamLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter URL: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+            android:id="@+id/streamUserInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/button_layout"
+                  android:layout_width="fill_parent"
+                  android:layout_height="80dp"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:padding="10dp" >
+
+        <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Stream" />
+
+        <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Cancel" />
+
+    </LinearLayout>
+</LinearLayout>

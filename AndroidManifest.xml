@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jlhun3.MediaCentre"
+          android:versionCode="1"
+          android:versionName="1.0" >
+<uses-sdk android:minSdkVersion="8"/>
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+    <!-- android:configChanges="orientation"    *** makes it so processes continue normally as media playback can stop -->
+    <!-- screenOrientation makes the screen fixed -->
+    <activity android:name="com.jlhun3.MediaCentre.MainView"
+              android:configChanges="orientation"
+              android:screenOrientation="portrait"
+              android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name="com.jlhun3.MediaCentre.PlayList"
+              android:configChanges="orientation"
+              android:label="@string/app_name" >
+    </activity>
+
+    <activity android:name="com.jlhun3.MediaCentre.Music"
+              android:configChanges="orientation"
+              android:label="@string/app_name" >
+    </activity>
+
+    <activity android:name="com.jlhun3.MediaCentre.VideoList"
+              android:configChanges="orientation"
+              android:label="@string/app_name" >
+    </activity>
+
+    <activity android:name="com.jlhun3.MediaCentre.Video"
+              android:configChanges="orientation"
+              android:label="@string/app_name" >
+    </activity>
+
+    <activity android:name="com.jlhun3.MediaCentre.StreamInput"
+              android:configChanges="orientation"
+              android:label="@string/app_name" >
+    </activity>
+
+    <activity android:name="com.jlhun3.MediaCentre.Stream"
+              android:configChanges="orientation"
+              android:label="@string/app_name" >
+    </activity>
+
+</application>
+</manifest>
